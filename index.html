@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- 內容區塊:顯示所有餐廳 -->
+    <section id="content">
+        <!-- 每一間餐廳資訊 -->
+        <div class="box" v-for="d in datas">
+            <h2>店名：{{ d.店名 }}</h2>
+            <hr>
+            <h3>聯絡人：{{ d.聯絡人 }}</h3>
+            <h4>電話：{{ d.聯絡電話 }}</h4>
+            <h4>地址：{{ d.地址 }}</h4>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
